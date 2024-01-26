@@ -1,0 +1,1 @@
+from rest_framework import  routersfrom .api import  Proyectoviewsetsrouter=routers.DefaultRouter()router.register(r'api/proyecto', Proyectoviewsets)urlpatterns = router.urls

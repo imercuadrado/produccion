@@ -1,0 +1,1 @@
+from rest_framework import  serializersfrom .models import proyectoclass AdminSerializers(serializers.ModelSerializer):    class Meta:        model=proyecto        fields=['id','titulo','descripcion','tecnologia','creado_fecha']        read_only_fields=('creado_fecha',)

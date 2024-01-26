@@ -1,0 +1,1 @@
+from .models import  proyectofrom rest_framework import  viewsets, permissionsfrom .serializer import  AdminSerializersclass Proyectoviewsets(viewsets.ModelViewSet):    queryset = proyecto.objects.all()    permission_classes = [permissions.AllowAny]    serializer_class = AdminSerializers
